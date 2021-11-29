@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1>User = <%= user.email %> </h1>
+    
+<h2>links and services</h2>
+<div>
+    <h3>customer</h3>
+    <a href="/addcustomer">Add new customer</a>
+    <a href="/customer">customer list</a>
+</div>
+<div>
+    <h3>Supplier</h3>
+    <a href="/addsupplier">Add new supplier</a>
+    <a href="/supplier">supplier list</a>
+</div>
+<div>
+    <h3>customer</h3>
+    <a href="/addproduct">Add new product</a>
+    <a href="/product">product list</a>
+</div>
+<div>
+    <h3>more details</h3>
+    <a href="/expenses">See expenses</a>
+    <a href="/addexpenses">Add expenses</a>
+    <a href="/monthlysales">monthly sales</a>
+    <a href="/addmonthlysales"> Add monthly sales</a>
+    <div>
+        <h3>Payment methods:<%= ...user.paymentmethod %> </h3>
+        <form action="/addpaymentmethod" method="POST">
+            <label for="paymentmethod"> add payment method:</label>
+            <input type="text" name="paymentmethod" id="paymentmethod" placeholder="enter payment method">
+            <button type="submit">add product to cart</button>
+        </form>
+    </div>
+    <div>
+    <h3>cart items:<%= user.cart %> </h3>
+    <form action="/addcartitem" method="POST">
+        <label for="cart"> add to cart:</label>
+        <input type="text" name="cart" id="cart" placeholder="enter product name">
+        <button type="submit">add product to cart</button>
+    </form>
+    </div>
+    
+</div>
+
+</body>
+</html>

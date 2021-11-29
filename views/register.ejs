@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Style>
+        *{margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        width:100vw;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        padding: 15vh 5vw;
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        width: 50vh;
+        justify-content: space-evenly;
+        align-items:center;
+        
+    }
+    </Style>
+    <title>Sign-up</title>
+</head>
+<body>
+    <div>
+        <form action="/register" method="POST" id="form">
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="enter your email" name="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="enter your password" name="password">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

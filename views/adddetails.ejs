@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add details</title>
+</head>
+<body>
+    <h1>Add expenses</h1>
+    <form action="/<%= link %> " method="post">
+        <label for="month">month:</label>
+        <input type="text" placeholder="enter month:" id="month" name="month">
+        <label for="amount">amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="enter amount">
+        <button type="submit">add expenses</button>
+    </form>
+</body>
+</html>

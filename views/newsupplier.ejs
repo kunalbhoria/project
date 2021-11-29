@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Style>
+        *{margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        width:100vw;
+        height:100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        padding: 15vh 5vw;
+        display: flex;
+        flex-direction: column;
+        min-height: 60vh;
+        min-width: 50vh;
+        justify-content: space-evenly;
+        align-items:center;
+        
+    }
+    </Style>
+    <title> new supplier</title>
+</head>
+<body>
+    <div>
+        <form action="/addsupplier" method="POST" id="form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="enter customer name" name="name">
+            </div>
+            <div>
+                <label for="number">Number</label>
+                <input type="number" id="number" placeholder="enter customer number" name="number">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="enter customer email" name="email">
+            </div>
+            <div>
+                <label for="location">Location</label>
+                <textarea name="location" id="location" cols="20" rows="5" placeholder="enter location"></textarea>
+            </div>
+            <button type="submit">Add new supplier</button>
+        </form>
+    </div>
+</body>
+</html>
